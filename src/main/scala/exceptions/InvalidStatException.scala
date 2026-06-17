@@ -4,7 +4,7 @@ package exceptions
  * Custom exception to signal an invalid game statistic encountered.
  *
  * This exception is designed to provide more specific feedback about
- * invalid game statistics. For instance, if a player's health points are
+ * invalid game statistics. For instance, if a character's health points are
  * outside an allowable range, this exception could be thrown with a detailed
  * message indicating the nature of the problem.
  *
@@ -16,4 +16,5 @@ package exceptions
  *
  * @param details A descriptive message detailing the nature of the invalid stat.
  */
+
 class InvalidStatException(details: String) extends Exception(s"An invalid stat was found -- $details")
